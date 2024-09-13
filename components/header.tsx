@@ -6,6 +6,7 @@ import user from "@/public/assets/MyInfo/PersonalOffice.png"
 import { Input } from "./ui/input"
 import Image from "next/image"
 import { useRouter } from "next/router"
+import Link from "next/link"
 export default function Header() {
     const router = useRouter()
 
@@ -17,17 +18,17 @@ export default function Header() {
         <header>
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 flex max-w-screen-2xl mx-auto pl-6 pr-6">
                 <div className="flex  items-center ">
-                    <a href="/" className="text-xl font-semibold leading-[normal] ml-6 pl-6">
+                    <Link href="/" className="text-xl font-semibold leading-[normal] ml-6 pl-6">
                         <span>HarmonyHR</span>
-                    </a>
+                    </Link>
                 </div>
                 <ul className="flex flex-col  text-lg font-normal lg:flex-row  mt-12 ml-16 mr-auto h-20">
-                    <li className="p-4"><a href="#">Home</a></li>
-                    <li className="p-4"><a href="/myinfo/timeoff">My Info</a></li>
-                    <li className="p-4"><a href="/people">People</a></li>
-                    <li className="p-4"><a href="#">Hiring</a></li>
-                    <li className="p-4"><a href="#">Reports</a></li>
-                    <li className="p-4"><a href="#">Files</a></li>
+                    <li className="p-4"><Link href="#">Home</Link></li>
+                    <li className="p-4"><Link href="/myinfo/timeoff">My Info</Link></li>
+                    <li className="p-4"><Link href="/people">People</Link></li>
+                    <li className="p-4"><Link href="#">Hiring</Link></li>
+                    <li className="p-4"><Link href="#">Reports</Link></li>
+                    <li className="p-4"><Link href="#">Files</Link></li>
                 </ul>
                 <div className="mt-8" >
                     <Input className="rounded-xl min-w-96 border-black mt-3 " type="text" placeholder="Search" />
