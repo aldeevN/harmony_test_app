@@ -226,10 +226,7 @@ export default function MyInfo() {
         </div>
         <div className="ml-6  bg-gray-100 border rounded-lg w-full px-4 py-14  z-10">
           <div className="text-sky-900">
-            <h4 className="`font-inter  text-xl font-medium  text-sky-900 ">
-              Time Off
-            </h4>
-            <hr />
+            <h3 className="border-b-gray-400 border-b-2 ">Time Off</h3>
             <div className="flex mx-20 justify-between mt-6">
               <div className="w-64 h-36 bg-gray-200 text-center p-6">
                 <h4 className="font-inter text-xl font-semibold  ">Sick</h4>
@@ -255,27 +252,25 @@ export default function MyInfo() {
             </div>
           </div>
           <div className="mt-16">
-            <p>Upcoming Time Off</p>
-            <hr />
+            <p className="border-b-gray-400 border-b-2 ">Upcoming Time Off</p>
+
             <p className="mt-5">Jan 27</p>
-            <p>1 dey of Sick</p>
-            <hr />
+            <p className="border-b-gray-400 border-b-2 ">1 dey of Sick</p>
           </div>
           <div className="mt-5">
             <p>Jul 4</p>
-            <p>Independence Day</p>
-            <hr />
+            <p className="border-b-gray-400 border-b-2 ">Independence Day</p>
           </div>
           <div className="flex justify-evenly">
-            <div className="text-left">
-              <h5>Date</h5>
-              <p>23/05/2024</p>
-              <p>23/05/2024</p>
-              <p>23/05/2024</p>
-              <p>23/05/2024</p>
-              <p>23/05/2024</p>
+            <div className="absolute min-w-[1020px]   ml-2 ">
+              <h5 className="border-b-gray-400 border-b-2 ">Date</h5>
+              <p className="border-b-gray-400 border-b-2 ">23/05/2024</p>
+              <p className="border-b-gray-400 border-b-2 ">23/05/2024</p>
+              <p className="border-b-gray-400 border-b-2 ">23/05/2024</p>
+              <p className="border-b-gray-400 border-b-2 ">23/05/2024</p>
+              <p className="border-b-gray-400 border-b-2 ">23/05/2024</p>
             </div>
-            <div className="description">
+            <div className="ml-16 ">
               <h5>Description</h5>
               <p>Accrual for 23/05/2024 to 20/11/2024</p>
               <p>Accrual for 23/05/2024 to 20/11/2024</p>
@@ -283,7 +278,7 @@ export default function MyInfo() {
               <p>Accrual for 23/05/2024 to 20/11/2024</p>
               <p>Accrual for 23/05/2024 to 20/11/2024</p>
             </div>
-            <div className="used">
+            <div className="">
               <h5>Used Days (-)</h5>
               <p>-</p>
               <p>-6</p>
@@ -291,7 +286,7 @@ export default function MyInfo() {
               <p>-6</p>
               <p>-</p>
             </div>
-            <div className="earned">
+            <div className="">
               <h5>Earned Days (+)</h5>
               <p>3.00</p>
               <p>-</p>
@@ -299,7 +294,7 @@ export default function MyInfo() {
               <p>-</p>
               <p>3.00</p>
             </div>
-            <div className="balance">
+            <div className="">
               <h5>Balance</h5>
               <p>3.00</p>
               <p>3.00</p>
