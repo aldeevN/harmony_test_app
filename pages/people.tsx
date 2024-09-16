@@ -1,11 +1,11 @@
-import Layout from "@/components/layout"
+import Layout from "@/components/layout";
 
 const People = () => {
-    return (
-        <Layout>
-            <h1>People </h1>
-        </Layout>
-    )
-}
+  return (
+    <Layout>
+      <h1>People </h1>
+    </Layout>
+  );
+};
 
-export default People
+export default People;
