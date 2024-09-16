@@ -20,6 +20,7 @@ export function LoginForm() {
   const [login] = useLogin();
   const router = useRouter();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     const formVal = {
