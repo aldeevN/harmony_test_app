@@ -1,8 +1,11 @@
+import Layout from "@/components/layout";
 import type { NextPage } from "next";
-import Link from "next/link";
-
 const Home: NextPage = () => {
-  return <Link href="/login">to login page</Link>;
+  return (
+    <Layout>
+      <>Hi</>
+    </Layout>
+  );
 };
 
 export default Home;

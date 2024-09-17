@@ -10,6 +10,10 @@ import group from "@/public/assets/MyInfo/group-icon.svg";
 import eur from "@/public/assets/MyInfo/eur-icon.svg";
 import geo from "@/public/assets/MyInfo/geo-icon.svg";
 import user from "@/public/assets/MyInfo/user-icon.svg";
+import downarrow from "@/public/assets/MyInfo/down-arrow-icon.svg";
+import comp from "@/public/assets/MyInfo/comp-icon.svg";
+import annual from "@/public/assets/MyInfo/annual-icon.svg";
+import sick from "@/public/assets/MyInfo/sick-icon.svg";
 import Image from "next/image";
 export default function MyInfo() {
   return (
@@ -186,7 +190,7 @@ export default function MyInfo() {
               <p>4 More...</p>
             </div>
           </div>
-          <div className="w-56 bg-gray-100  flex-col rounded-lg p-6 mb-5 z-0">
+          <div className="w-56 bg-gray-100  flex-col rounded-2xl p-6 mb-5 z-0">
             <p>Manager</p>
             <div className="flex">
               <Image
@@ -226,25 +230,59 @@ export default function MyInfo() {
         </div>
         <div className="ml-6  bg-gray-100 border rounded-lg w-full px-4 py-14  z-10">
           <div className="text-sky-900">
-            <h3 className="border-b-gray-400 border-b-2 ">Time Off</h3>
+            <Image
+              src={comp}
+              alt="icon"
+              width={16}
+              height={16}
+              className="translate-y-5 -translate-x-3"
+            />
+            <h3 className="border-b-gray-400 border-b-2 ml-3">Time Off</h3>
             <div className="flex mx-20 justify-between mt-6">
               <div className="w-64 h-36 bg-gray-200 text-center p-6">
                 <h4 className="font-inter text-xl font-semibold  ">Sick</h4>
-                <h4>3</h4>
+                <Image
+                  src={sick}
+                  alt="icon"
+                  width={30}
+                  height={30}
+                  className="translate-y-3 translate-x-12"
+                />
+                <h4 className="font-inter -mt-5 text-xl font-semibold  ">3</h4>
                 <h5>Days Available</h5>
                 <p>1 dey scheduled</p>
                 <p className="mt-14">Sick Full-Time</p>
               </div>
               <div className="w-64 h-36 bg-gray-200 text-center p-6">
-                <h4>Annual Leave </h4>
-                <h4>10.3</h4>
+                <h4 className="font-inter  text-xl font-semibold  ">
+                  Annual Leave
+                </h4>
+                <Image
+                  src={annual}
+                  alt="icon"
+                  width={30}
+                  height={30}
+                  className="translate-y-3 translate-x-12"
+                />
+                <h4 className="font-inter -mt-5 text-xl font-semibold  ">
+                  10.3
+                </h4>
                 <h5>Days Available</h5>
                 <p> </p>
                 <p className="mt-20">Holiday Full-Time</p>
               </div>
               <div className="w-64 h-36 bg-gray-200 text-center p-6">
-                <h4>Comp/in Lieu Time</h4>
-                <h4>0</h4>
+                <h4 className="font-inter text-xl font-semibold  ">
+                  Comp/in Lieu Time
+                </h4>
+                <Image
+                  src={comp}
+                  alt="icon"
+                  width={30}
+                  height={30}
+                  className="translate-y-3 translate-x-12"
+                />
+                <h4 className="font-inter -mt-5 text-xl font-semibold  ">0</h4>
                 <h5>Human Used(YTD)</h5>
                 <p> </p>
                 <p className="mt-20">Comp/in Lieu Time Flexible Policy</p>
@@ -252,14 +290,60 @@ export default function MyInfo() {
             </div>
           </div>
           <div className="mt-16">
-            <p className="border-b-gray-400 border-b-2 ">Upcoming Time Off</p>
-
-            <p className="mt-5">Jan 27</p>
+            <Image
+              src={time}
+              alt="icon"
+              width={16}
+              height={16}
+              className="translate-y-5 -translate-x-3"
+            />
+            <p className="border-b-gray-400 border-b-2 text-sky-900 translate-x-2">
+              Upcoming Time Off
+            </p>
+            <Image
+              src={sick}
+              alt="icon"
+              width={16}
+              height={16}
+              className="translate-y-5 -translate-x-3"
+            />
+            <p className="ml-3  text-sky-900">Jan 27</p>
             <p className="border-b-gray-400 border-b-2 ">1 dey of Sick</p>
           </div>
           <div className="mt-5">
-            <p>Jul 4</p>
+            <Image
+              src={sick}
+              alt="icon"
+              width={16}
+              height={16}
+              className="translate-y-5 -translate-x-3"
+            />
+            <p className="ml-3 text-sky-900">Jul 4</p>
             <p className="border-b-gray-400 border-b-2 ">Independence Day</p>
+          </div>
+          <div className="flex-col mb-5">
+            <Image
+              src={time}
+              alt="icon"
+              width={16}
+              height={16}
+              className="translate-y-5 -translate-x-3"
+            />
+            <p className="ml-3">History</p>
+            <div className="flex ">
+              <a className="flex rounded-xl border border-solid p-1 border-slate-600 font-inter w-64 text-sm mr-3">
+                Sick
+                <Image className="ml-2" src={downarrow} alt="icon" width={14} />
+              </a>
+              <a className="flex rounded-xl border border-solid p-1 border-slate-600 font-inter w-20 text-sm mr-3">
+                All
+                <Image className="ml-2" src={downarrow} alt="icon" width={14} />
+              </a>
+              <a className="ml-auto flex rounded-xl border border-solid p-1 border-slate-600 font-inter w24 text-sm ">
+                Balance History
+                <Image className="ml-2" src={downarrow} alt="icon" width={14} />
+              </a>
+            </div>
           </div>
           <div className="flex justify-evenly">
             <div className="absolute min-w-[1020px]   ml-2 ">

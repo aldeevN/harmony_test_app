@@ -17,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
         <title>Harmony</title>
       </Head>
       <Header />
-      <main className="bg-slate-200  z-0">{children}</main>
+      <main className="bg-slate-200 h-screen">{children}</main>
     </>
   );
 };

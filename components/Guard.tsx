@@ -23,6 +23,7 @@ const Guard = ({ children, excludedRoutes }: GuardProps) => {
 
   useEffect(() => {
     if (!authenticated && !excludedRoutes?.includes(router.pathname)) {
+      console.log(authenticated);
       router.push("/login");
       client.resetStore();
     }

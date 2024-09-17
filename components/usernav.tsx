@@ -15,9 +15,9 @@ export default function UserNav() {
             alt="avatar"
             width={150}
             height={150}
-            className="rounded-full -ml-4 -mt-1 z-10"
+            className="rounded-full ml-5 mt-1 z-10"
           />
-          <h1 className="ml-24 -mt-12 font-inter text-[1.75rem] font-semibold">
+          <h1 className="ml-16 -mt-11 font-inter text-[1.75rem] font-semibold">
             {user.myProfile.name}
           </h1>
         </div>
